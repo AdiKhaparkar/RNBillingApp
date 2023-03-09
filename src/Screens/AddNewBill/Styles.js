@@ -1,0 +1,138 @@
+import {StyleSheet, useWindowDimensions} from 'react-native';
+import {Dimensions} from 'react-native';
+import {LIGHT_GREY, THEME_COLOR} from '../../Common/Colors';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    height: 60,
+    width: '100%',
+    elevation: 5,
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  bottomView: {
+    position: 'absolute',
+    height: 100,
+    width: '100%',
+    bottom: 0,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    backgroundColor: '#fff',
+    elevation: 5,
+  },
+  btn: {
+    width: '40%',
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: THEME_COLOR,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  txt: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 600,
+  },
+  total: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#000',
+  },
+  modalView: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+    // flex:1,
+    position: 'absolute',
+    backgroundColor: '#fff',
+  },
+  searchBox: {
+    width: '86%',
+    height: 50,
+    backgroundColor: LIGHT_GREY,
+    borderRadius: 20,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
+  input: {
+    width: '70%',
+    marginLeft: 10,
+  },
+  noitems: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addedItem: {
+    width: '100%',
+    height: '100%',
+  },
+  nameModalView: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+    backgroundColor: 'rgba (0,0,0,.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  nameView: {
+    backgroundColor: '#fff',
+
+    width: '90%',
+    borderRadius: 15,
+  },
+  input2: {
+    width: '90%',
+    height: 50,
+    borderWidth: 0.5,
+    alignSelf: 'center',
+    borderRadius: 10,
+    marginTop: 20,
+    paddingLeft: 20,
+  },
+  btnView: {
+    width: '100%',
+    height: 60,
+    justifyContent: 'space-evenly',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 10,
+  },
+  cancelBtn: {
+    width: '40%',
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: '#989898',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  confirmBtn: {
+    width: '40%',
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: '#3c26e3',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cancelBtnTxt: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#fff',
+  },
+  confirmBtnTxt: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#fff',
+  },
+});
